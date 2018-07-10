@@ -1,0 +1,119 @@
+.jumbotron{
+    background: url("http://www.ablewebsydney.com.au/wp-content/uploads/2016/02/HTML-code-background-jpeg-e1456231829767.jpg") no-repeat center center; 
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    max-width: 800px;
+    min-height: 300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    float:left;
+}
+
+.card-header{
+    background-color: #4EB0DE;
+    color: white;
+}
+
+.portfoliocard{
+    background-color: grey
+}
+
+.line{
+    width: 100%;
+    height: 2px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    background-color: slategray
+}
+
+.img-thumbnail{
+    max-height:200px;
+    max-width:200px;
+    border-radius: 1000000px;
+    width:200px;
+    height:200px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    -webkit-transition: filter 1s; /* Safari */
+    transition: filter 1s;
+}
+
+.img-thumbnail:hover{
+    -webkit-filter: none;
+    filter: none;
+}
+
+.card-header{
+    border:none;
+}
+
+.about, .jumbotron, .portfolio, .portimage, footer{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+}
+.summary{
+    text-align: left !important;
+    padding: 5px;
+}
+
+article.portfolio{
+    margin-top: 25px;
+    background-color: grey;
+    margin-bottom: 100px;
+}
+
+footer{
+    width: 100vw;
+    text-align: center;
+    color:white;
+    background-color: #4EB0DE;
+}
+
+.portimage{
+    max-height: 400px;
+    max-width: 800px;
+}
+
+
+@media (min-width:700px) {
+    .about{
+        max-width:800px;
+    };
+}
+
+@media (max-width:800px) {
+    .navbar, a.navbar-brand{
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #aboutcard:hover{
+        cursor: row-resize
+    }
+
+    .jumbotron{
+        float:none;
+    }
+
+    code{
+        margin: 0 auto;
+    }
+    .img-thumbnail{
+        max-height: 150px;
+        max-width: 150px;
+    }
+    #summary{
+        display: none;
+    }
+    .aboutlabel{
+        display: none;
+    }
+
+    .aboutcard:after{
+        content: 'About Me (Click to Expand!)'
+    }
+}
