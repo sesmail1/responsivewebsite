@@ -4,10 +4,6 @@ function windowSizer() {
     });
 };
 
-function windowSizer2() {
-    $
-}
-
 
 function disabledSizer(valid) {
     if (valid == true) {

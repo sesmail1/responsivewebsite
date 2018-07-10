@@ -80,7 +80,7 @@ footer{
 @media (min-width:700px) {
     .about{
         max-width:800px;
-    };
+    }
 }
 
 @media (max-width:800px) {
